@@ -1,0 +1,519 @@
+
+	/*
+	https://autoprefixer.github.io/
+	*/
+
+/* 
+=========================
+          FONTS
+=========================
+
+Titre: Arial Bold 50px
+sous-titre: Arial Bold 25px
+texte: Arial 15px
+
+*/
+
+@font-face {
+	font-family: '';
+	src: url('../fonts/');
+	font-display: swap;
+  }  
+
+/*
+______________________________________________________________________
+								COLORS
+______________________________________________________________________
+ bleu : #0065fc
+ bleu clair : #DEEBFF
+ gris : #D9D9D9
+*/
+
+/*
+  I       I
+  I       I
+  I       I
+  IIIIIIIII
+  I       I
+  I       I
+  I       I
+  I       I
+*/  
+
+header {
+	display : flex;
+	justify-content: center;
+    flex-direction : column;
+    align-items: center;
+	margin-bottom: 50px;
+	padding : 20px 20px 0 20px;
+}
+
+header .logo {
+	width: 100px;
+}
+
+header > h1 {
+	color : #000;
+}
+
+@media screen and (max-width: 500px) {
+	header {
+	flex-direction: column;
+	padding: 20px 0 0;
+  }
+
+  header .logo {
+	width: 70px;
+	margin-bottom: 10px;
+  }
+
+  header .Nav {
+	width: 100%;
+  }
+}
+/*
+  IIII
+  I   I
+  I   I
+  I   I
+  IIII
+  I   I
+  I   I
+  I   I
+  IIII
+*/  
+
+body {
+	background-color: white;
+	font-family : sans-serif;
+	font-size : 15px;
+	margin : 0 auto;
+	width : 100%;
+	max-width : 500px;
+}
+
+h1 {
+	font-family: 'Raleway-bold', sans-serif;
+	font-style: normal;
+	font-size: 22px;
+	line-height: 26px;
+	color: #000000;
+	padding-bottom : 5px;
+}
+
+h2 {
+	font-family : "Raleway-bold";
+	color : black;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+.title {
+	color : #D9D9D9;
+	padding : 20px 20px 0 20px;
+}
+.Search {
+	padding : 20px 20px 5px 20px;
+	display: inline-block;
+	align-items: center;
+	max-height: 35%;
+	width : 100%;
+}
+
+.Search span {
+	font-family: "Raleway";
+	color : black;
+	padding-right: 10px;
+}
+.Search .SearchButton {
+	font-family: "Raleway-bold";
+	color : white;
+	padding-right: 10px;
+}
+
+.infoSearch {
+	display : flex;
+	flex-direction: row;
+	align-items: center;
+}
+.infoLogoContainer {
+	width : 24px;
+	height: 24px;
+	border: 1px solid #D9D9D9;
+	border-radius: 50%;
+	margin-right : 10px;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+	align-items: center;
+}
+
+.infoLogoContainer i {
+	font-size: 10px;
+	color : #0065FC;
+}
+
+.starRating i {
+	color : #0065fc;
+}
+
+form .locationIcon {
+	background : #F2F2F2;
+	border-radius: 15px 0px 0px 15px;
+	height : 42px;
+	width : 42px;
+	display : flex;
+    justify-content: center;
+	flex-direction : column;
+	align-items: center;
+	margin : 0;
+	padding : 0;
+	color : #000;
+	border: none;
+    cursor: default;
+    transition: none;
+}
+
+form .locationIcon:hover {
+	box-shadow: none;
+	color : #000;
+}
+
+form button {
+	height : 42px;
+	border-radius: 0px 15px 15px 0px;
+	background: #0065FC;
+	border: none;
+	color : #F2F2F2;
+	cursor : pointer;
+	padding : 0 25px;
+}
+
+form button .search_icon {display : none;}
+
+form input {
+	height : 42px;
+	width : 40%;
+	max-width : 300px;
+	border: 1px solid #F2F2F2;
+	padding : 0 10px;
+}
+
+button {
+	max-width: 75%;
+	padding : 2%;
+	font-family: 'Raleway';
+}
+
+.filters {padding : 20px 0;}
+
+.filterTitle {
+	display: inline-block;
+	font-weight: bold; 
+}
+
+.filterButton {display : inline-block;}
+
+.filterButton > label > i {color : #0065fc;}
+
+#ecoFilter, #familyFilter, #coupleFilter, #petFilter {display: none;}
+  
+  #ecoFilter:checked + label,
+   #familyFilter:checked + label,
+    #coupleFilter:checked + label,
+	 #petFilter:checked + label {
+	background-color: #DEEBFF;
+  }
+
+
+  label {
+	padding: 10px;
+	margin : 5px 2px;
+	border: 2px solid #D9D9D9;
+	border-radius: 50px;
+	color: #000;
+	cursor: pointer;
+	transition: .3s;
+	text-align: center;
+	display: inline-block;
+	font-family: "Raleway-bold";
+  }
+  label:hover {
+	box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
+	color : rgb(64, 0, 128);
+	background-color: #DEEBFF;
+  }
+ 
+  @media screen and (max-width: 500px) {
+	form button {
+		padding: 0 15px;
+	  }
+	  form button span {
+		display: none;
+	  }
+	  form button .search_icon {
+		display: block;
+	  }
+  }
+
+/*
+    IIIIIII
+	I      I
+	I      I
+	I      I
+	IIIIIII
+	I    I
+	I     I
+	I      I
+	I       I
+*/ 
+
+.Hotels {
+	display : flex;
+	flex-direction : row;
+	align-items: space-between;
+}
+
+.housings {
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	padding : 20px 20px 0 20px;
+	margin: 1%;
+	width : 70%;
+}
+
+.Hotels > .housings > a {
+	margin : 10px 0;
+}
+
+.popular {
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	padding : 20px 20px 0 20px;
+	margin: 1%;
+}
+.popularStar {
+	display : flex;
+	justify-content : space-between;
+	flex-direction : row;
+	padding-bottom : 20px;
+	color : black;
+}
+
+.PopularFlex {
+	display : flex;
+	flex-direction : column;
+	align-items : space-around;
+  }
+  
+.activities {
+	margin-top: 50px;
+	margin: 1%;
+} 
+
+#Hotel {
+	justify-content: space-around;
+	margin: 1%;
+}
+
+.Card {
+	display: block;
+	border-radius: 20px;
+	overflow: hidden;
+	width : 30%;
+	min-width : 200px;
+	padding : 5px;
+	background-color: white;
+	margin : 10px;
+	transition: .3s;
+	cursor : pointer;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.Card:hover {
+	box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
+}
+#Activity {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#Activity .Card {
+	width : 23%;
+	min-width : 240px;
+	margin : 1% auto; 
+}
+
+#Activity .Card .imageCard {
+	height :400px;
+}
+
+.imageCard {
+	background-size: cover;
+	background-position: center;
+	min-width: 100px;
+	min-height: 100px;
+	overflow : hidden;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+#image1 {background-image :url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");}
+
+#image2 {background-image :url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");}
+
+#image3 {background-image :url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");}
+
+#image4 {background-image :url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");}
+
+
+.descriptionCard {	
+	justify-content: left;
+	background-color: #FFFFFF;
+	padding : 10px;
+	width : auto;
+	line-height: 20px;
+}
+
+.CardPopular {
+	display : flex;
+	flex-direction: row;
+	border-radius : 20px;
+	width : 90%;
+	min-width: 200px;
+	overflow : hidden;
+	padding : 5px;
+	background-color: white;
+	margin : 10px;
+	transition: .3s;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.CardPopular:hover {
+	box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
+	cursor : pointer;
+  }
+  
+  .imageCardPopular {
+	border-top-left-radius : 20px;
+	border-bottom-left-radius : 20px;
+	background-size : cover;
+	background-position: center;
+	min-width: 100px;
+	min-height: 100px;
+  }
+  
+  .descriptionCardPopular {
+	display : flex;
+	flex-direction: column;
+	align-items: space-between;
+	border-top-right-radius : 20px;
+	border-bottom-right-radius : 20px;
+	padding : 10px;
+	line-height : 20px;
+  }  
+
+.prix {
+	display: flex;
+	justify-content: left;
+	flex-direction : row;
+	align-items: left;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.unitePrix {
+	color : black;
+	font-weight : bold;
+}
+
+.starRating {display:inline-block;}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+  }
+
+#Hplus {
+	font-family: 'Raleway-bold';
+}
+
+@media screen and (max-width: 500px) {
+	.Hotels {
+		display : flex;
+		flex-direction : column;
+	}
+	.PopularFlex {
+		display: flex;
+		flex-direction: column;
+	}
+	.housings {
+		margin : 1% auto;
+		width : 98%;
+	}
+	.housings .Card {
+		margin : 1% auto;
+		width : 100%;
+	}
+	
+}
+
+ 
+/*
+  IIIIIIIIIIIII
+  I
+  I
+  IIIIIIIII
+  I
+  I
+  I
+  I
+*/  
+
+footer {
+	display : flex;
+	justify-content: left;
+	flex-direction : column;
+	align-items: left;
+	flex-wrap : wrap;
+	background: #444;
+	max-height : 5%;
+	padding : 20px 20px 0 20px;
+	line-height : 30px;
+	padding : 40px;
+}
+
+footer > div {
+	display : block;
+	color: black;
+	width : auto;
+}
+
+footer > h2 {
+	margin : 5px;
+	font-family: 'Raleway-bold';
+	font-style: normal;
+	font-size: 18px;
+	line-height: 21px;
+	padding-bottom: 10px;
+}
+
+footer > div a {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-size: 16px;
+	line-height: 19px;
+	text-decoration: none;
+	color: black;
+}
+@media screen and (max-width: 500px) {
+	footer div {
+		width : 100%;
+	}
+}
