@@ -26,17 +26,8 @@
     <header>
       <div class="logo">
         <a href="#">
-          <img class="logo" src="./images/logo/ohmyfood.png" alt="logo">
+          <img class="logoTitle" src="./images/logo/ohmyfood.png" alt="logo">
         </a>
-      </div>
-      <div class="City">
-        <i class="fas fa-map-marker-alt fa-lg"></i>
-        <p>Paris, Belleville</p>
-      </div>
-      <div class="Finder">
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button>Explorer nos restaurants</button>
       </div>
     </header>
     
@@ -51,23 +42,38 @@
     I   I
     IIII
   -->
+  
+  <div class="Search">
+    <div class="City">
+      <i class="fas fa-map-marker-alt fa-lg"></i>
+      <h2>Paris, Belleville</h2>
+    </div>
+    <div class="Finder">
+      <h1>Réservez le menu qui vous convient</h1>
+      <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+      <div class="explore">
+        <input type="checkbox" id="Explore"/>
+        <label for="Explore">Explorer nos restaurants</label>
+      </div>
+    </div>
+  </div>
 
   <section class="Fonctionnement">
     <h1>Fonctionnement</h1>
     <div class="PickRestaurant">
 
         <input type="checkbox" name="PickR" id="PickR" />
-        <label for="PickR"><i class="fa fa-mobile-screen-button" alt="pickR"></i>Choisissez un restaurant</label>
+        <label for="PickR"><span>1</span><i class="fa fa-mobile" alt="pickR"></i>Choisissez un restaurant</label>
     </div>
     <div class="PickMenu">
 
         <input type="checkbox" name="PickM" id="PickM" />
-        <label for="PickM"><i class="fa fa-list-ul" alt="pickM"></i>Composez votre menu</label>
+        <label for="PickM"><span>2</span><i class="fa fa-list-ul" alt="pickM"></i>Composez votre menu</label>
     </div>
     <div class="EatAtRestaurant">
 
         <input type="checkbox" name="EatAtR" id="EatAtR" />
-        <label for="EatAtR"><i class="fa fa-store" alt="eco"></i>Dégustez au restaurant</label>
+        <label for="EatAtR"><span>3</span><i class="fa fa-store" alt="eco"></i>Dégustez au restaurant</label>
     </div>
   </section>
 
@@ -151,13 +157,13 @@
         <div class="footerLinks">
             <div class="proposeRestaurant">
                 <div class="divLink">
-                    <i class="fa fa-" alt="propose"></i>
+                    <i class="fa fa-utensils" alt="propose"></i>
                     <a href="#">Proposer un restaurant</a>
                 </div>
             </div>
             <div class="becomePartner">
                 <div class="divLink">
-                    <i class="fa fa-" alt="partner"></i>
+                    <i class="fa fa-handshake" alt="partner"></i>
                     <a href="#">Devenir partenaire</a>
                 </div>
             </div>

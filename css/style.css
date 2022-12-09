@@ -8,25 +8,54 @@
           FONTS
 =========================
 
-Titre: Arial Bold 50px
-sous-titre: Arial Bold 25px
-texte: Arial 15px
+Titre et Logo: Shrikhand 50px
+Texte: Roboto 25px
 
 */
 
 @font-face {
-	font-family: '';
-	src: url('../fonts/');
+	font-family: 'Shrikhand';
+	src: url('../fonts/Shrikhand-Regular.ttf');
 	font-display: swap;
-  }  
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.ttf');
+	font-display: swap;
+}
 
 /*
 ______________________________________________________________________
 								COLORS
 ______________________________________________________________________
- bleu : #0065fc
- bleu clair : #DEEBFF
- gris : #D9D9D9
+ Primaire : #9356DC
+ Secondaire : #FF79DA
+ Tertiaire : #99E2D0
+*/
+
+/*
+	///////////////CHEAT SHEET///////////////////// 
+	display: flex,block, inline-block, none;
+	flex-direction: column, row, row-reverse, column-reverse;
+	align-items: left, center;
+	justify-content: space-between , space-around;
+	background-color, color
+	border-radius: 20px;
+	padding : 20px 20px 0 20px;
+	margin: 1%;
+	width : 70%;
+	height, min-h, min-w
+	background-size: cover;
+	background-position: center;
+	overflow : hidden;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	line-height: 20px;
+	cursor : pointer;
+	font-weight
+	.class:hover{}, .class:checked{}
+	@media screen and (max-width: 500px) {}
 */
 
 /*
@@ -45,33 +74,21 @@ header {
 	justify-content: center;
     flex-direction : column;
     align-items: center;
-	margin-bottom: 50px;
-	padding : 20px 20px 0 20px;
+	margin : 0 auto;
+	padding : 20px;
 }
 
 header .logo {
-	width: 100px;
-}
-
-header > h1 {
-	color : #000;
-}
-
-@media screen and (max-width: 500px) {
-	header {
-	flex-direction: column;
-	padding: 20px 0 0;
-  }
-
-  header .logo {
-	width: 70px;
-	margin-bottom: 10px;
-  }
-
-  header .Nav {
 	width: 100%;
-  }
+	background-color: white;
+	margin : 0 auto;
 }
+
+header .logo img {
+	margin : 0 auto;
+	width : 50%;
+}
+
 /*
   IIII
   I   I
@@ -91,11 +108,13 @@ body {
 	margin : 0 auto;
 	width : 100%;
 	max-width : 500px;
+	font-family : "Roboto";
 }
 
 h1 {
-	font-family: 'Raleway-bold', sans-serif;
+	font-family: 'Roboto';
 	font-style: normal;
+	font-weight: bolder;
 	font-size: 22px;
 	line-height: 26px;
 	color: #000000;
@@ -103,7 +122,6 @@ h1 {
 }
 
 h2 {
-	font-family : "Raleway-bold";
 	color : black;
 }
 
@@ -111,53 +129,65 @@ a {
 	text-decoration: none;
 	color: #000;
 }
-.title {
-	color : #D9D9D9;
-	padding : 20px 20px 0 20px;
-}
-.Search {
-	padding : 20px 20px 5px 20px;
-	display: inline-block;
-	align-items: center;
-	max-height: 35%;
-	width : 100%;
+
+p {
+	color : grey;
+	font-family: 'Roboto';
 }
 
-.Search span {
-	font-family: "Raleway";
-	color : black;
-	padding-right: 10px;
+i {
+	margin : 0 10px;
 }
-.Search .SearchButton {
-	font-family: "Raleway-bold";
+
+input {
+	display : none;
+	font-weight: bold;
+	
+}
+
+.explore label {
+	background-color: #ff79da;
 	color : white;
-	padding-right: 10px;
+	border-radius: 50px;
+	transition: .3s;
+}
+.explore label:hover {
+	box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
+    color : white;
+    background-color: #9356DC;
 }
 
-.infoSearch {
-	display : flex;
-	flex-direction: row;
-	align-items: center;
+label {
+  padding: 10px;
+  margin : 5px 2px;
+  border: 2px solid #D9D9D9;
+  border-radius: 50px;
+  color: #000;
+  cursor: pointer;
+  transition: .3s;
+  text-align: center;
+  display: inline-block;
+  font-family: "Roboto";
 }
+label:hover {
+  box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
+  color : rgb(64, 0, 128);
+  background-color: #DEEBFF;
+}
+
+
+
+
 .infoLogoContainer {
 	width : 24px;
 	height: 24px;
-	border: 1px solid #D9D9D9;
+	border: 1px solid;
 	border-radius: 50%;
 	margin-right : 10px;
 	display: flex;
 	flex-direction: column;
     justify-content: center;
 	align-items: center;
-}
-
-.infoLogoContainer i {
-	font-size: 10px;
-	color : #0065FC;
-}
-
-.starRating i {
-	color : #0065fc;
 }
 
 form .locationIcon {
@@ -192,8 +222,6 @@ form button {
 	padding : 0 25px;
 }
 
-form button .search_icon {display : none;}
-
 form input {
 	height : 42px;
 	width : 40%;
@@ -205,164 +233,85 @@ form input {
 button {
 	max-width: 75%;
 	padding : 2%;
-	font-family: 'Raleway';
+	font-family: 'Roboto';
 }
 
-.filters {padding : 20px 0;}
-
-.filterTitle {
-	display: inline-block;
-	font-weight: bold; 
-}
-
-.filterButton {display : inline-block;}
-
-.filterButton > label > i {color : #0065fc;}
-
-#ecoFilter, #familyFilter, #coupleFilter, #petFilter {display: none;}
-  
-  #ecoFilter:checked + label,
-   #familyFilter:checked + label,
-    #coupleFilter:checked + label,
-	 #petFilter:checked + label {
-	background-color: #DEEBFF;
-  }
-
-
-  label {
-	padding: 10px;
-	margin : 5px 2px;
-	border: 2px solid #D9D9D9;
-	border-radius: 50px;
-	color: #000;
-	cursor: pointer;
-	transition: .3s;
-	text-align: center;
-	display: inline-block;
-	font-family: "Raleway-bold";
-  }
-  label:hover {
-	box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
-	color : rgb(64, 0, 128);
-	background-color: #DEEBFF;
-  }
- 
-  @media screen and (max-width: 500px) {
-	form button {
-		padding: 0 15px;
-	  }
-	  form button span {
-		display: none;
-	  }
-	  form button .search_icon {
-		display: block;
-	  }
-  }
 
 /*
-    IIIIIII
-	I      I
-	I      I
-	I      I
-	IIIIIII
-	I    I
-	I     I
-	I      I
-	I       I
-*/ 
+IIIIIII
+I      I
+I      I
+I      I
+IIIIIII
+I    I
+I     I
+I      I
+I       I
+*/
 
-.Hotels {
-	display : flex;
-	flex-direction : row;
-	align-items: space-between;
-}
-
-.housings {
+.Search {
+	padding : 20px 0;
 	display: flex;
 	flex-direction: column;
-	align-items: space-between;
-	background-color: #F2F2F2;
-	border-radius: 20px;
-	padding : 20px 20px 0 20px;
-	margin: 1%;
-	width : 70%;
+	align-items: center;
+	max-height: 35%;
+	width : 100%;
+	padding : 50px 0;
+}
+.Search .City {
+	background-color: #bbb;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width : 100%;
+	padding : 10px 0;
 }
 
-.Hotels > .housings > a {
-	margin : 10px 0;
-}
-
-.popular {
-	background-color: #F2F2F2;
-	border-radius: 20px;
-	padding : 20px 20px 0 20px;
-	margin: 1%;
-}
-.popularStar {
+.Finder {
 	display : flex;
-	justify-content : space-between;
-	flex-direction : row;
-	padding-bottom : 20px;
-	color : black;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #ddd;
+	width : 100%;
 }
 
-.PopularFlex {
-	display : flex;
-	flex-direction : column;
-	align-items : space-around;
-  }
-  
-.activities {
-	margin-top: 50px;
-	margin: 1%;
-} 
-
-#Hotel {
+.Fonctionnement {
+	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
-	margin: 1%;
+	margin : 0 auto;
+	align-items: center;
+	padding : 25px 0;
 }
 
-.Card {
+.Restaurants {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin : 0 auto;
+	align-items: center;
+	background-color: #ddd;
+	padding : 50px 0;
+}
+
+.RestaurantItem {
 	display: block;
 	border-radius: 20px;
 	overflow: hidden;
 	width : 30%;
-	min-width : 200px;
+	width : 98%;
 	padding : 5px;
 	background-color: white;
-	margin : 10px;
+	margin : 1% auto;
 	transition: .3s;
 	cursor : pointer;
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
 }
 
-.Card:hover {
+.RestaurantItem:hover {
 	box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
-}
-#Activity {
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
-
-#Activity .Card {
-	width : 23%;
-	min-width : 24px;
-	margin : 1% auto; 
-}
-
-#Activity .Card .imageCard {
-	height :400px;
-}
-
-.imageCard {
-	background-size: cover;
-	background-position: center;
-	min-width: 100px;
-	min-height: 100px;
-	overflow : hidden;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
 }
 
 #image1 {background-image :url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");}
@@ -372,15 +321,6 @@ button {
 #image3 {background-image :url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");}
 
 #image4 {background-image :url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");}
-
-
-.descriptionCard {	
-	justify-content: left;
-	background-color: #FFFFFF;
-	padding : 10px;
-	width : auto;
-	line-height: 20px;
-}
 
 .CardPopular {
 	display : flex;
@@ -395,11 +335,6 @@ button {
 	transition: .3s;
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
 }
-
-.CardPopular:hover {
-	box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
-	cursor : pointer;
-  }
   
   .imageCardPopular {
 	border-top-left-radius : 20px;
@@ -410,9 +345,9 @@ button {
 	min-height: 100px;
   }
   
-  .descriptionCardPopular {
+  .descriptionRestaurant {
 	display : flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: space-between;
 	border-top-right-radius : 20px;
 	border-bottom-right-radius : 20px;
@@ -420,50 +355,10 @@ button {
 	line-height : 20px;
   }  
 
-.prix {
-	display: flex;
-	justify-content: left;
-	flex-direction : row;
-	align-items: left;
-	padding-top: 2px;
-	padding-bottom: 2px;
-}
-.unitePrix {
-	color : black;
-	font-weight : bold;
-}
-
-.starRating {display:inline-block;}
-
 .flex-container {
 	display: flex;
 	flex-wrap: wrap;
   }
-
-#Hplus {
-	font-family: 'Raleway-bold';
-}
-
-@media screen and (max-width: 500px) {
-	.Hotels {
-		display : flex;
-		flex-direction : column;
-	}
-	.PopularFlex {
-		display: flex;
-		flex-direction: column;
-	}
-	.housings {
-		margin : 1% auto;
-		width : 98%;
-	}
-	.housings .Card {
-		margin : 1% auto;
-		width : 100%;
-	}
-	
-}
-
  
 /*
   IIIIIIIIIIIII
@@ -487,33 +382,30 @@ footer {
 	padding : 20px 20px 0 20px;
 	line-height : 30px;
 	padding : 40px;
+	width : 100%;
 }
 
 footer > div {
 	display : block;
-	color: black;
-	width : auto;
+	color: white;
+	width : 100%;
 }
 
-footer > h2 {
+footer div h2 {
 	margin : 5px;
-	font-family: 'Raleway-bold';
+	font-family: 'Shrikhand';
 	font-style: normal;
 	font-size: 18px;
 	line-height: 21px;
 	padding-bottom: 10px;
+	color : white;
 }
 
 footer > div a {
-	font-family: 'Raleway';
+	font-family: 'Roboto';
 	font-style: normal;
 	font-size: 16px;
 	line-height: 19px;
 	text-decoration: none;
-	color: black;
-}
-@media screen and (max-width: 500px) {
-	footer div {
-		width : 100%;
-	}
+	color: white;
 }
