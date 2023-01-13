@@ -60,35 +60,50 @@
 
   <section class="Fonctionnement">
     <h1>Fonctionnement</h1>
-    <div class="PickRestaurant">
-
-        <input type="checkbox" name="PickR" id="PickR" />
-        <label for="PickR"><span>1</span><i class="fa fa-mobile"></i>Choisissez un restaurant</label>
-    </div>
-    <div class="PickMenu">
-
-        <input type="checkbox" name="PickM" id="PickM" />
-        <label for="PickM"><span>2</span><i class="fa fa-list-ul"></i>Composez votre menu</label>
-    </div>
-    <div class="EatAtRestaurant">
-
-        <input type="checkbox" name="EatAtR" id="EatAtR" />
-        <label for="EatAtR"><span>3</span><i class="fa fa-store"></i>Dégustez au restaurant</label>
+    <div class="InstructionContainer">
+      <div class="InstructionItemContainer">
+        <div class="InstructionNumber" id="In1">
+          <span>1</span>
+        </div>
+        <div class="Instructions" id="PickRestaurant">
+          <i class="fa fa-mobile"></i>
+          <h2>Choisissez un restaurant</h2>
+        </div>
+      </div>
+        <div class="InstructionItemContainer">
+        <div class="InstructionNumber" id="In2">
+          <span>2</span>
+        </div>
+        <div class="Instructions" id="PickMenu">
+          <i class="fa fa-list-ul"></i>
+          <h2>Composez votre menu</h2>
+        </div>
+      </div>
+      <div class="InstructionItemContainer">
+        <div class="InstructionNumber" id="In3">
+          <span>3</span>
+        </div>
+        <div class="Instructions" id="EatAtRestaurant">
+          <i class="fa fa-store"></i>
+          <h2>Dégustez au restaurant</h2>
+        </div>
+      </div>
     </div>
   </section>
 
   
   <section class="Restaurants">
-    <div class="restaurantList">
+    <h1>Restaurants</h1>
+    <div class="RestaurantList">
         <div class="RestaurantItem" id="R1">
             <div class="imageRestaurant" id="image1">
                 <p class="New">Nouveau</p>
             </div>
             <div class="descriptionRestaurant">
-              <div>
+              <div class="Texte">
                 <h2>La palette du goût</h2>
                 <p>MénilMontant</p>
-              </div class="Texte">
+              </div>
               <div class="Like">
                 <i class="fa fa-heart"></i>
               </div>

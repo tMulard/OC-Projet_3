@@ -70,9 +70,11 @@ ______________________________________________________________________
 	@media screen and (max-width: 500px) {}
 	border: none;
     cursor: default;
-    transition: none;
+    transition: none, .3s;
 	box-shadow: none;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
 */
+
 
 /*
   I       I
@@ -105,7 +107,7 @@ header .logo h1 {
 	margin : 0 auto;
 	width : 50%;
 	font-family: 'Shrikhand';
-	font-size : 24px;
+	font-size : 32px;
 }
 
 /*
@@ -161,8 +163,6 @@ i {
 input {
 	display : none;
 	font-weight: bold;
-	border: solid 1px black;
-	border-radius : 50px;
 }
 
 .explore label {
@@ -170,6 +170,8 @@ input {
 	color : white;
 	border-radius: 50px;
 	transition: .3s;
+	padding : 20px;
+	font-size : 18px;
 }
 .explore label:hover {
 	box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
@@ -222,14 +224,14 @@ I       I
 	width : 100%;
 }
 .Search .City {
-	box-shadow: inset 0 1px 2px rgb(64, 64, 64);
-	background-color: #bbb;
+	box-shadow: inset 0 1px 2px rgb(212, 212, 212);
+	background-color: rgb(234, 234, 234);
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	width : 100%;
-	padding : 10px 0;
+	padding : 20px 0;
 }
 
 .Finder {
@@ -237,35 +239,100 @@ I       I
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #ddd;
+	background-color: rgb(247, 247, 247);
 	width : 100%;
+	padding : 40px 30px;
+}
+
+.Finder > h1 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+.Finder > p {
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: large;
 }
 
 .Fonctionnement {
+	margin : 0 auto;
+	padding : 0 0 50px;
+	width : 90%;
+}
+
+.Fonctionnement > h1 {padding : 10px 0;}
+
+.InstructionContainer {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	margin : 0 auto;
+	justify-content: space-between;
 	align-items: center;
-	padding : 25px 0;
+	width : 100%;
+}
+
+.InstructionItemContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+}
+
+.InstructionNumber {
+	background-color: rgb(147, 86, 220);
+	border-radius: 50px;
+	padding : 5px 7px;
+	margin-right: -15px;
+	color : white;
+	z-index: 2;
+}
+
+.Instructions {
+	display : flex;
+	flex-direction: row;
+	align-items: center;
+	box-shadow: 0 1px 2px grey;
+	border-radius : 30px;
+	padding : 30px 50px;
+	margin : 10px 5px 10px 0;
+	font-weight: bold;
+	width : 100%;
+	background-color: rgb(247, 247, 247);
+	z-index: 1;
+}
+
+.Instructions:hover {
+	background-color: rgb(245, 237, 255);
+	cursor: pointer;
+	transition : .3s;
+}
+
+.Instructions i {
+	color : grey;
+	padding : 0 20px;
 }
 
 .Restaurants {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
 	margin : 0 auto;
 	align-items: center;
-	background-color: #ddd;
+	background-color: rgb(247, 247, 247);
 	padding : 50px 0;
 }
 
+.Restaurants > h1 {margin-left: 10px;}
+
+.RestaurantList {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+}
 .RestaurantItem {
 	display: block;
 	border-radius: 20px;
 	overflow: hidden;
-	width : 30%;
-	width : 98%;
+	width : 100%;
+	height : auto;
 	padding : 5px;
 	background-color: white;
 	margin : 1% auto;
@@ -278,6 +345,33 @@ I       I
 	box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
 }
 
+.imageRestaurant {
+	background-size: cover;
+	background-position: center;
+	overflow : hidden;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	width : 100%;
+	height : 200px;
+}
+
+.New {
+	background-color: var(--tertiary);
+	margin: 5% 75%;
+	font-weight: bold;
+	padding : 1px 5px;
+}
+
+.descriptionRestaurant {
+  display : flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top-right-radius : 20px;
+  border-bottom-right-radius : 20px;
+  padding : 10px;
+  line-height : 20px;
+}  
+
 #image1 {background-image :url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");}
 
 #image2 {background-image :url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");}
@@ -285,45 +379,8 @@ I       I
 #image3 {background-image :url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");}
 
 #image4 {background-image :url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");}
-
-.CardPopular {
-	display : flex;
-	flex-direction: row;
-	border-radius : 20px;
-	width : 90%;
-	min-width: 200px;
-	overflow : hidden;
-	padding : 5px;
-	background-color: white;
-	margin : 10px;
-	transition: .3s;
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
-}
   
-  .imageCardPopular {
-	border-top-left-radius : 20px;
-	border-bottom-left-radius : 20px;
-	background-size : cover;
-	background-position: center;
-	min-width: 100px;
-	min-height: 100px;
-  }
-  
-  .descriptionRestaurant {
-	display : flex;
-	flex-direction: row;
-	align-items: space-between;
-	border-top-right-radius : 20px;
-	border-bottom-right-radius : 20px;
-	padding : 10px;
-	line-height : 20px;
-  }  
 
-.flex-container {
-	display: flex;
-	flex-wrap: wrap;
-  }
- 
 /*
   IIIIIIIIIIIII
   I
@@ -337,16 +394,22 @@ I       I
 
 footer {
 	display : flex;
-	justify-content: left;
+	justify-content: space-between;
 	flex-direction : column;
 	align-items: left;
-	flex-wrap : wrap;
 	background: #444;
 	max-height : 5%;
 	padding : 20px 20px 0 20px;
 	line-height : 30px;
 	padding : 40px;
 	width : 100%;
+}
+
+.footerLinks {
+	display : flex;
+	justify-content: space-between;
+	flex-direction : column;
+	align-items: left;
 }
 
 footer > div {
