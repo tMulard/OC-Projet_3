@@ -1,0 +1,14 @@
+{
+  "name": "project3",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/style.scss css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tMulard/OC-Projet_3.git"
+  },
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
