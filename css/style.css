@@ -268,12 +268,6 @@ label {
   font-family: "Roboto";
 }
 
-label:hover {
-  box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
-  color: rgb(64, 0, 128);
-  background-color: #DEEBFF;
-}
-
 button {
   max-width: 75%;
   padding: 2%;
@@ -479,8 +473,14 @@ I       I
   background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
-.like i {
-  background-clip: var(--primary);
+.like #L4 #Li4 {
+  background-clip: content-box;
+  color: white;
+}
+
+.like #L4:checked ~ #Li4 i {
+  background-clip: content-box;
+  color: var(--primary);
 }
 
 /*# sourceMappingURL=style.css.map */
