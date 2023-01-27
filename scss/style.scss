@@ -300,6 +300,7 @@ I       I
 	margin: 0 auto;
 }
 .RestaurantItem {
+	position: relative;
 	display: block;
 	border-radius: 20px;
 	overflow: hidden;
@@ -354,13 +355,33 @@ I       I
 #image3 {background-image :url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");}
 
 #image4 {background-image :url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");}
- 
-.like #L4 #Li4 {
-	background-clip: content-box;
-	color :  white;
-	}
 
-.like #L4:checked ~ #Li4 i{
-		background-clip: content-box;
-		color : var(--primary);
+.Like {
+	position : absolute;
+	bottom : 15px;
+	right : 10px;
+
+	i {
+		-webkit-text-stroke: 1px #000000;
+    	color: white;
+    	transition: 1s;
+	}
+}
+
+@for $i from 1 to 4 {
+	#Li#{$i}:checked ~ #Li#{$i} {
+		background: linear-gradient(to top,
+      #ff79da,
+      #f272da,
+      #e56cdb,
+      #d767db,
+      #c862dc,
+      #b75ddc,
+      #a659dc,
+      #9356dc);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color : transparent;
+		-webkit-text-stroke: 0px;
+	}
 }
