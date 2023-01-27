@@ -2,7 +2,8 @@
   "name": "project3",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass scss/style.scss css/style.css --watch"
+    "sass": "sass scss/style.scss css/style.css --watch",
+    "rest": "sass scss/restaurant.scss css/restaurant.css --watch"
   },
   "repository": {
     "type": "git",

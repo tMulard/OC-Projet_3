@@ -1,0 +1,99 @@
+header {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header .logoRestaurant {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
+
+header .logoRestaurant h1 {
+  margin: 0 auto;
+  width: 50%;
+  font-family: "Shrikhand";
+  font-size: 32px;
+}
+
+/*
+  IIII
+  I   I
+  I   I
+  I   I
+  IIII
+  I   I
+  I   I
+  I   I
+  IIII
+*/
+body {
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  font-family: "Roboto";
+}
+
+h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  padding-bottom: 5px;
+}
+
+h2 {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  color: grey;
+  font-family: "Roboto";
+}
+
+i {
+  margin: 0 10px;
+}
+
+/*
+IIII
+I    I
+I    I
+I    I
+I    I
+I    I
+IIII
+*/
+body > img {
+  z-index: 10;
+}
+
+.Order {
+  background-color: rgb(234, 234, 234);
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  z-index: 1;
+}
+
+.restaurantTitle h1 {
+  padding-top: 20px;
+  font-family: "Shrikhand";
+}
+
+/*# sourceMappingURL=restaurant.css.map */

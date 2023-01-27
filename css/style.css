@@ -116,11 +116,6 @@ footer > div a {
   transform: rotate(315deg);
 }
 
-/*
-https://autoprefixer.github.io/
-https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=fr
-https://www.learnui.design/tools/gradient-generator.html
-*/
 /* 
 =========================
           FONTS
@@ -158,34 +153,6 @@ ______________________________________________________________________
  Réservez le menu ==> f7f7f7
  hover des badges ==> f5edff
  Footer ==> 353535
-*/
-/*
-	///////////////CHEAT SHEET///////////////////// 
-	display: flex,block, inline-block, none;
-	flex-direction: column, row, row-reverse, column-reverse;
-	align-items: left, center;
-	justify-content: space-between , space-around;
-	background-color, color
-	border-radius: 20px;
-	padding : 20px 20px 0 20px;
-	margin: 1%;
-	width : 70%;
-	height, min-h, min-w
-	background-size: cover;
-	background-position: center;
-	overflow : hidden;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	line-height: 20px;
-	cursor : pointer;
-	font-weight
-	.class:hover{}, .class:checked{}
-	@media screen and (max-width: 500px) {}
-	border: none;
-    cursor: default;
-    transition: none, .3s;
-	box-shadow: none;
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
 */
 /*
   I       I
