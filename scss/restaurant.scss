@@ -176,19 +176,19 @@ IIII
     width : 100%;
     border-radius: 20%;
     background-color: white;
-    padding : 10px;
+    padding : 25px;
     position: relative;
     cursor : pointer;
 }
 
-.DescriptionText h2 {
-    text-overflow: ellipsis;
-
+.DescriptionText {
+    position: absolute;
+    left : 10px;
+    top : 10px;
 }
 
-.DescriptionText p {
+.DescriptionText h2, .DescriptionText p {
     text-overflow: ellipsis;
-   
 }
 
 .ListItem .DescriptionPrice {
