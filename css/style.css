@@ -485,7 +485,7 @@ I       I
   transition: 1s;
 }
 
-#Li1:checked ~ #Li1 {
+#L1:checked ~ #Li1 i {
   background: linear-gradient(to top, #ff79da, #f272da, #e56cdb, #d767db, #c862dc, #b75ddc, #a659dc, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
@@ -493,7 +493,7 @@ I       I
   -webkit-text-stroke: 0px;
 }
 
-#Li2:checked ~ #Li2 {
+#L2:checked ~ #Li2 i {
   background: linear-gradient(to top, #ff79da, #f272da, #e56cdb, #d767db, #c862dc, #b75ddc, #a659dc, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
@@ -501,7 +501,15 @@ I       I
   -webkit-text-stroke: 0px;
 }
 
-#Li3:checked ~ #Li3 {
+#L3:checked ~ #Li3 i {
+  background: linear-gradient(to top, #ff79da, #f272da, #e56cdb, #d767db, #c862dc, #b75ddc, #a659dc, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0px;
+}
+
+#L4:checked ~ #Li4 i {
   background: linear-gradient(to top, #ff79da, #f272da, #e56cdb, #d767db, #c862dc, #b75ddc, #a659dc, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;

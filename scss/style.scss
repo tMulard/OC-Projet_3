@@ -368,8 +368,8 @@ I       I
 	}
 }
 
-@for $i from 1 to 4 {
-	#Li#{$i}:checked ~ #Li#{$i} {
+@for $i from 1 to 5 {
+	#L#{$i}:checked ~ #Li#{$i} i {
 		background: linear-gradient(to top,
       #ff79da,
       #f272da,

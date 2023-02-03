@@ -176,6 +176,64 @@ IIII
     width : 100%;
     border-radius: 20%;
     background-color: white;
-    padding : 5px;
-    // text-overflow: ellipsis;
+    padding : 10px;
+    position: relative;
+    cursor : pointer;
+}
+
+.DescriptionText h2 {
+    text-overflow: ellipsis;
+
+}
+
+.DescriptionText p {
+    text-overflow: ellipsis;
+   
+}
+
+.ListItem .DescriptionPrice {
+    position : absolute;
+    right : 0;
+    transition: .3s;
+}
+
+.ListItem .CheckDiv {
+    visibility: hidden;
+    position : absolute;
+    background : var(--tertiary);
+    right : -50px;
+    overflow: hidden;
+    padding : 15px 0;
+    transition : .5s;
+}
+
+.CheckIcon input {
+    display: none;
+}
+
+.CheckDiv .CheckIcon label i{
+    color : white;
+    transition: .3s;
+}
+
+.ListItem:hover {
+ .DescriptionPrice {
+    right : 50%;
+ }
+ .CheckDiv {
+    visibility: visible;
+    right : 0px;    
+ }
+ @for $i from 1 to 10 {
+        #C#{$i} i {
+            animation: rotate 3s;
+        }
+    }
+ 
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
 }
