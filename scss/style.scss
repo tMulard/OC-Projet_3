@@ -157,11 +157,6 @@ label {
   display: inline-block;
   font-family: "Roboto";
 }
-// label:hover {
-//   box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
-//   color : rgb(64, 0, 128);
-//   background-color: #DEEBFF;
-// }
 
 button {
 	max-width: 75%;
@@ -368,7 +363,7 @@ I       I
 	}
 }
 
-@for $i from 1 to 5 {
+@for $i from 1 to 9 {
 	#L#{$i}:checked ~ #Li#{$i} i {
 		background: linear-gradient(to top,
       #ff79da,

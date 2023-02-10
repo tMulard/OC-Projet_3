@@ -518,6 +518,38 @@ I       I
   -webkit-text-stroke: 0px;
 }
 
+#L5:checked ~ #Li5 i {
+  background: linear-gradient(to top, #ff79da, #f272da, #e56cdb, #d767db, #c862dc, #b75ddc, #a659dc, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0px;
+}
+
+#L6:checked ~ #Li6 i {
+  background: linear-gradient(to top, #ff79da, #f272da, #e56cdb, #d767db, #c862dc, #b75ddc, #a659dc, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0px;
+}
+
+#L7:checked ~ #Li7 i {
+  background: linear-gradient(to top, #ff79da, #f272da, #e56cdb, #d767db, #c862dc, #b75ddc, #a659dc, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0px;
+}
+
+#L8:checked ~ #Li8 i {
+  background: linear-gradient(to top, #ff79da, #f272da, #e56cdb, #d767db, #c862dc, #b75ddc, #a659dc, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0px;
+}
+
 .logoRestaurant {
   display: flex;
   justify-content: space-between;
@@ -557,8 +589,8 @@ img {
 
 .Order {
   background-color: rgb(234, 234, 234);
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   position: absolute;
   top: 50%;
   right: 0;
@@ -579,13 +611,24 @@ img {
   align-items: center;
   justify-content: space-between;
   width: 90%;
+  position: relative;
 }
-
 .restaurantTitle h1 {
   font-family: "Shrikhand";
+  font-weight: lighter;
   z-index: 15;
   padding-top: 20px;
   padding-left: 20px;
+}
+.restaurantTitle .Like {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.restaurantTitle .Like i {
+  -webkit-text-stroke: 1px #000000;
+  color: rgb(234, 234, 234);
+  transition: 1s;
 }
 
 .AppetiserList, .DishList, .DessertList {
@@ -621,7 +664,7 @@ img {
 }
 .ListItem .DescriptionPrice {
   position: absolute;
-  right: 0;
+  left: -35px;
   transition: 0.5s;
 }
 .ListItem label {
@@ -634,6 +677,7 @@ img {
   align-items: center;
   padding: 10px;
   cursor: pointer;
+  margin: 0;
 }
 .ListItem label .CheckDiv {
   position: absolute;
@@ -664,9 +708,6 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.ListItem label:hover .DescriptionPrice {
-  right: 50%;
 }
 .ListItem input {
   display: none;
