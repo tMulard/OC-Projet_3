@@ -112,9 +112,12 @@ img {
     cursor : pointer;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
     margin-bottom: 5px;
+
+    animation: appear 2s;
     
     .DescriptionText {
         transition : 1s;
+        text-align: left;
     }
     
     .DescriptionPrice {
@@ -207,5 +210,16 @@ img {
       color : white;
       background-color: var(--primary);
     }
+  }
+}
+
+@keyframes appear {
+  from { 
+     visibility:hidden; 
+     opacity:0;
+  }
+  to {
+  	visibility:visible; 
+    opacity:1;
   }
 }
