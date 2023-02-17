@@ -29,7 +29,6 @@ IIII
 .RestaurantDisplay {
   position : relative;
   z-index: 99;
-  margin-bottom: 725px;
 }
 
 img {
@@ -41,14 +40,10 @@ img {
   background-color: rgb(234, 234, 234);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  position : absolute;
-  top : 50%;
-  right : 0;
-  bottom : 0;
-  left : 0;
-  height : 900px;
+  margin-top: -100px;
   padding-top: 20px;
   width : 100%;
+  position : relative;
 }
 
 .RestaurantMenu {
@@ -62,24 +57,23 @@ img {
     justify-content: space-between;
     width : 90%;
     position : relative;
+    
+    margin : 0 auto;
 
     h1 {
       font-family: 'Shrikhand';
       font-weight: lighter;
       z-index: 15;
-      padding-top: 20px;
-      padding-left : 20px;
     }
-    
-    .Like {
-      position : absolute;
-      bottom : 0;
-      right : 0;
-    
-      i {
-        -webkit-text-stroke: 1px #000000;
+    .LikeRestaurant {
+      label {
+        padding: 0;
+        i {
+          -webkit-text-stroke: 1px #000000;
           color: rgb(234, 234, 234);
           transition: 1s;
+          margin : 0;
+        }
       }
     }
 }
@@ -104,14 +98,13 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width : 100%;
     overflow: hidden;
     border-radius: 10px;
     background-color: white;
     position: relative;
     cursor : pointer;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
-    margin-bottom: 5px;
+    margin: 0 10px 10px;
 
     animation: appear 2s;
     
@@ -167,8 +160,8 @@ img {
             }
           }
           .DescriptionText {
+            max-width: 50%;
             h2, p {
-              max-width: 50%;
               overflow: hidden;
               text-overflow: ellipsis;
               white-space: nowrap;
