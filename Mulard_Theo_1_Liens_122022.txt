@@ -2,6 +2,6 @@
 							Liens vers les sites du projet
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Github repo : https://github.com/tMulard/OC-Projet_3/tree/dev
+Github repo : https://github.com/tMulard/OC-Projet_3/
 
-URL du site : Dynamisez_une_page_web_avec_des_animations_CSS_Mulard_Théo\index.html
+URL du site : https://tmulard.github.io/OC-Projet_3/
