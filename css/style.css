@@ -879,8 +879,7 @@ IIII
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
   margin: 0 10px 10px;
-  -webkit-animation: appear 2s;
-          animation: appear 2s;
+  opacity: 0;
 }
 .ListItem .DescriptionText {
   -webkit-transition: 1s;
@@ -1023,6 +1022,96 @@ IIII
   background-color: var(--primary);
 }
 
+.ListItem-1 {
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.ListItem-2 {
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.ListItem-3 {
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.ListItem-4 {
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.ListItem-5 {
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.ListItem-6 {
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.ListItem-7 {
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.ListItem-8 {
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.ListItem-9 {
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.ListItem-10 {
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 @-webkit-keyframes appear {
   from {
     visibility: hidden;
@@ -1042,5 +1131,83 @@ IIII
   to {
     visibility: visible;
     opacity: 1;
+  }
+}
+.loaderContainer {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: disappear 2s;
+          animation: disappear 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.loaderContainer .cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+.loaderContainer .loader {
+  z-index: 1000;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-animation-name: loading;
+          animation-name: loading;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 3s;
+          animation-iteration-count: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border-top: 5px dotted var(--secondary);
+  border-left: 5px dotted var(--secondary);
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
