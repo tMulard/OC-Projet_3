@@ -768,8 +768,7 @@ IIII
   position: relative;
   z-index: 99;
 }
-
-img {
+.RestaurantDisplay img {
   z-index: 50;
   width: 100%;
 }
@@ -1045,5 +1044,3 @@ img {
     opacity: 1;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
