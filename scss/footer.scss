@@ -19,6 +19,8 @@ footer {
 	line-height : 30px;
 	padding : 40px;
 	width : 100%;
+	z-index: 10;
+	position: relative;
 }
 
 .footerLinks {
@@ -33,7 +35,7 @@ footer > div {
 	width : 100%;
 }
 
-footer div h2 {
+footer div p {
 	margin : 5px;
 	font-family: 'Shrikhand';
 	font-style: normal;
