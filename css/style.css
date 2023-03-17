@@ -607,7 +607,7 @@ IIII
   position: relative;
   margin: 0 auto;
 }
-.restaurantTitle h1 {
+.restaurantTitle h2 {
   font-family: "Shrikhand";
   font-weight: lighter;
   z-index: 15;
@@ -627,7 +627,7 @@ IIII
   flex-direction: column;
   justify-content: left;
 }
-.AppetiserList h3, .DishList h3, .DessertList h3 {
+.AppetiserList span, .DishList span, .DessertList span {
   margin: 10px;
   padding-bottom: 5px;
   border-bottom: solid 2px var(--tertiary);
@@ -697,7 +697,7 @@ IIII
 .ListItem label:hover .DescriptionText {
   max-width: 50%;
 }
-.ListItem label:hover .DescriptionText h2, .ListItem label:hover .DescriptionText p {
+.ListItem label:hover .DescriptionText h3, .ListItem label:hover .DescriptionText p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

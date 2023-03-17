@@ -61,7 +61,7 @@ IIII
     
     margin : 0 auto;
 
-    h1 {
+    h2 {
       font-family: 'Shrikhand';
       font-weight: lighter;
       z-index: 15;
@@ -84,7 +84,7 @@ IIII
     flex-direction: column;
     justify-content: left;
     
-    h3 { 
+    span { 
       margin: 10px;
       padding-bottom: 5px;
       border-bottom: solid 2px var(--tertiary);
@@ -160,7 +160,7 @@ IIII
           }
           .DescriptionText {
             max-width: 50%;
-            h2, p {
+            h3, p {
               overflow: hidden;
               text-overflow: ellipsis;
               white-space: nowrap;
