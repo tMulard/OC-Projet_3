@@ -3,19 +3,87 @@
   box-sizing: border-box;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -25,8 +93,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -34,16 +111,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -136,9 +217,9 @@ Texte: Roboto 25px
   font-display: swap;
 }
 :root {
-  --primary: #9356DC;
-  --secondary: #FF79DA;
-  --tertiary: #99E2D0;
+  --primary: #9356dc;
+  --secondary: #ff79da;
+  --tertiary: #99e2d0;
 }
 
 /*
@@ -303,7 +384,17 @@ I       I
   width: 100%;
   padding: 20px 0;
 }
-.Search .City p {
+.Search .City form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Search .City form input {
+  display: block;
+  border: none;
+  background-color: transparent;
+  z-index: 10;
   color: black;
 }
 .Search .Finder {
@@ -622,12 +713,16 @@ IIII
   margin: 0;
 }
 
-.AppetiserList, .DishList, .DessertList {
+.AppetiserList,
+.DishList,
+.DessertList {
   display: flex;
   flex-direction: column;
   justify-content: left;
 }
-.AppetiserList span, .DishList span, .DessertList span {
+.AppetiserList span,
+.DishList span,
+.DessertList span {
   margin: 10px;
   padding-bottom: 5px;
   border-bottom: solid 2px var(--tertiary);
@@ -697,7 +792,8 @@ IIII
 .ListItem label:hover .DescriptionText {
   max-width: 50%;
 }
-.ListItem label:hover .DescriptionText h3, .ListItem label:hover .DescriptionText p {
+.ListItem label:hover .DescriptionText h3,
+.ListItem label:hover .DescriptionText p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

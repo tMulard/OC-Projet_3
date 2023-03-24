@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-
-	<head>
+  <head>
     <title>Ohmyfood!</title>
-    <meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
-    <meta name="description" content="Ohmyfood!, site de réservation de restaurants en ligne">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a1f8d8f6ea.js" crossorigin="anonymous"></script>
-    <link rel='Stylesheet' href="css/style.css">
-	</head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="description"
+      content="Ohmyfood!, site de réservation de restaurants en ligne"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a1f8d8f6ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="Stylesheet" href="css/style.css" />
+  </head>
 
-	<body>
+  <body>
     <!--
   I       I
   I       I
@@ -29,7 +34,7 @@
         </a>
       </div>
     </header>
-    
+
     <!--
     IIII
     I   I
@@ -41,140 +46,149 @@
     I   I
     IIII
   -->
-  <div class="loaderContainer">
-    <span class="cover"></span>
-    <span class="loader"></span>
-  </div>
-  <section class="Search">
-    <div class="City">
-      <i class="fas fa-map-marker-alt fa-lg"></i>
-      <p>Paris, Belleville</p>
+    <div class="loaderContainer">
+      <span class="cover"></span>
+      <span class="loader"></span>
     </div>
-    <div class="Finder">
-      <h1>Réservez le menu qui vous convient</h1>
-      <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-      <div class="explore">
-        <input type="button" id="Explore" value="Explorer nos restaurants">
-        <label for="Explore" id="ExploreButton">Explorer nos restaurants</label>
+    <section class="Search">
+      <div class="City">
+        <form>
+          <label for="CitySearchBar" id="iconSearchBar"
+            ><i class="fas fa-map-marker-alt fa-lg"></i
+          ></label>
+          <input
+            id="CitySearchBar"
+            type="text"
+            name="searchBar"
+            placeholder="Paris, Belleville"
+          />
+        </form>
       </div>
-    </div>
-  </section>
+      <div class="Finder">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>
+          Découvrez des restaurants d'exception, sélectionnés par nos soins.
+        </p>
+        <div class="explore">
+          <input type="button" id="Explore" value="Explorer nos restaurants" />
+          <label for="Explore" id="ExploreButton"
+            >Explorer nos restaurants</label
+          >
+        </div>
+      </div>
+    </section>
 
-  <section class="Fonctionnement">
-    <h2>Fonctionnement</h2>
-    <div class="InstructionContainer">
-      <div class="InstructionItemContainer">
-        <div class="InstructionNumber" id="In1">
-          <span>1</span>
-        </div>
-        <div class="Instructions" id="PickRestaurant">
-          <i class="fa fa-mobile"></i>
-          <h3>Choisissez un restaurant</h3>
-        </div>
-      </div>
+    <section class="Fonctionnement">
+      <h2>Fonctionnement</h2>
+      <div class="InstructionContainer">
         <div class="InstructionItemContainer">
-        <div class="InstructionNumber" id="In2">
-          <span>2</span>
+          <div class="InstructionNumber" id="In1">
+            <span>1</span>
+          </div>
+          <div class="Instructions" id="PickRestaurant">
+            <i class="fa fa-mobile"></i>
+            <h3>Choisissez un restaurant</h3>
+          </div>
         </div>
-        <div class="Instructions" id="PickMenu">
-          <i class="fa fa-list-ul"></i>
-          <h3>Composez votre menu</h3>
+        <div class="InstructionItemContainer">
+          <div class="InstructionNumber" id="In2">
+            <span>2</span>
+          </div>
+          <div class="Instructions" id="PickMenu">
+            <i class="fa fa-list-ul"></i>
+            <h3>Composez votre menu</h3>
+          </div>
+        </div>
+        <div class="InstructionItemContainer">
+          <div class="InstructionNumber" id="In3">
+            <span>3</span>
+          </div>
+          <div class="Instructions" id="EatAtRestaurant">
+            <i class="fa fa-store"></i>
+            <h3>Dégustez au restaurant</h3>
+          </div>
         </div>
       </div>
-      <div class="InstructionItemContainer">
-        <div class="InstructionNumber" id="In3">
-          <span>3</span>
-        </div>
-        <div class="Instructions" id="EatAtRestaurant">
-          <i class="fa fa-store"></i>
-          <h3>Dégustez au restaurant</h3>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  
-  <section class="Restaurants">
-    <h2>Restaurants</h2>
-    <div class="RestaurantList">
+    <section class="Restaurants">
+      <h2>Restaurants</h2>
+      <div class="RestaurantList">
         <div class="RestaurantItem" id="R1">
           <a href="pages/lapalettedugout.html">
-          <div class="imageRestaurant" id="image1">
-            <p class="New">Nouveau</p>
-          </div>
-          <div class="descriptionRestaurant">
-            <div class="Texte">
-              <h3>La palette du goût</h3>
-              <p>MénilMontant</p>
+            <div class="imageRestaurant" id="image1">
+              <p class="New">Nouveau</p>
             </div>
+            <div class="descriptionRestaurant">
+              <div class="Texte">
+                <h3>La palette du goût</h3>
+                <p>MénilMontant</p>
+              </div>
+            </div>
+          </a>
+          <div class="Like">
+            <input type="checkbox" id="L1" />
+            <label for="L1" id="Li1">
+              <i class="fa-solid fa-heart"></i>
+            </label>
           </div>
-        </a>
-            <div class="Like">
-              <input type="checkbox" id="L1">
-              <label for="L1" id="Li1">
-                <i class="fa-solid fa-heart"></i>
-              </label>
-           </div>
         </div>
         <div class="RestaurantItem" id="R2">
           <a href="pages/lanoteenchantee.html">
-          <div class="imageRestaurant" id="image2">
-            <p class="New">Nouveau</p>
-          </div>
-          <div class="descriptionRestaurant">
-            <div class="Texte">
+            <div class="imageRestaurant" id="image2">
+              <p class="New">Nouveau</p>
+            </div>
+            <div class="descriptionRestaurant">
+              <div class="Texte">
                 <h3>La note enchantée</h3>
                 <p>Charonne</p>
               </div>
             </div>
           </a>
-            <div class="Like">
-              <input type="checkbox" id="L2">
-              <label for="L2" id="Li2">
-                <i class="fa-solid fa-heart"></i>
-              </label>
-            </div>
+          <div class="Like">
+            <input type="checkbox" id="L2" />
+            <label for="L2" id="Li2">
+              <i class="fa-solid fa-heart"></i>
+            </label>
           </div>
+        </div>
         <div class="RestaurantItem" id="R3">
           <a href="pages/alafrancaise.html">
-          <div class="imageRestaurant" id="image3">
-          </div>
-          <div class="descriptionRestaurant">
-            <div class="Texte">
+            <div class="imageRestaurant" id="image3"></div>
+            <div class="descriptionRestaurant">
+              <div class="Texte">
                 <h3>A la française</h3>
                 <p>Cité Rouge</p>
               </div>
             </div>
           </a>
-            <div class="Like">
-              <input type="checkbox" id="L3">
-              <label for="L3" id="Li3">
-                <i class="fa-solid fa-heart"></i>
-              </label>
-            </div>
+          <div class="Like">
+            <input type="checkbox" id="L3" />
+            <label for="L3" id="Li3">
+              <i class="fa-solid fa-heart"></i>
+            </label>
+          </div>
         </div>
         <div class="RestaurantItem" id="R4">
           <a href="pages/ledelicedessens.html">
-          <div class="imageRestaurant" id="image4">
-          </div>
-          <div class="descriptionRestaurant">
-            <div class="Texte">
-              <h3>Le délice des sens</h3>
-              <p>Folie-Méricourt</p>
+            <div class="imageRestaurant" id="image4"></div>
+            <div class="descriptionRestaurant">
+              <div class="Texte">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+              </div>
             </div>
-          </div>
           </a>
-            <div class="Like">
-              <input type="checkbox" id="L4">
-              <label for="L4" id="Li4">
-                <i class="fa-solid fa-heart"></i>
-              </label>
-            </div>
+          <div class="Like">
+            <input type="checkbox" id="L4" />
+            <label for="L4" id="Li4">
+              <i class="fa-solid fa-heart"></i>
+            </label>
+          </div>
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  
     <!--
     IIIIIIIIIIIII
     I
@@ -184,29 +198,28 @@
     I
     I
     I
-    --> 
+    -->
 
     <footer>
-        <div class="footerTitle">
-          <p>ohmyfood</p>
+      <div class="footerTitle">
+        <p>ohmyfood</p>
+      </div>
+      <div class="footerLinks">
+        <div class="proposeRestaurant">
+          <div class="divLink">
+            <i class="fa fa-utensils"></i>
+            <a href="#">Proposer un restaurant</a>
+          </div>
         </div>
-        <div class="footerLinks">
-            <div class="proposeRestaurant">
-                <div class="divLink">
-                    <i class="fa fa-utensils"></i>
-                    <a href="#">Proposer un restaurant</a>
-                </div>
-            </div>
-            <div class="becomePartner">
-                <div class="divLink">
-                    <i class="fa fa-handshake"></i>
-                    <a href="#">Devenir partenaire</a>
-                </div>
-            </div>
-            <a href="#">Mentions Légales</a>
-            <a href="mailto:email@ohmyfood.com">Contact</a>
+        <div class="becomePartner">
+          <div class="divLink">
+            <i class="fa fa-handshake"></i>
+            <a href="#">Devenir partenaire</a>
+          </div>
         </div>
-      </footer>
-  
-    </body>
+        <a href="#">Mentions Légales</a>
+        <a href="mailto:email@ohmyfood.com">Contact</a>
+      </div>
+    </footer>
+  </body>
 </html>
