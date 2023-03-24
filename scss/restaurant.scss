@@ -96,6 +96,7 @@ IIII
 
 .ListItem {
   display: flex;
+  padding: 10px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -120,65 +121,63 @@ IIII
   }
   label {
     width: 100%;
-    height: 100%;
-    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
     cursor: pointer;
     margin: 0;
 
-    .CheckDiv {
-      position: absolute;
-      top: 0;
-      right: -55px;
-      width: 50px;
-      height: 100%;
-      background-color: var(--tertiary);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      transition: all 0.5s ease;
-      padding: 5px 0;
-
-      i {
-        color: white;
-        transition: 0.5s ease;
-      }
-    }
-
-    &:hover {
-      .CheckDiv {
-        right: 0;
-
-        i {
-          transform: rotate(360deg);
-        }
-      }
-      .DescriptionText {
-        max-width: 50%;
-        h3,
-        p {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-        }
-      }
-    }
-  }
-
-  input {
-    display: none;
-
-    &:checked + label .CheckDiv {
+    &:hover ~ .CheckDiv {
       right: 0;
-
       i {
         transform: rotate(360deg);
       }
+    }
+    &:hover ~ .DescriptionText {
+      max-width: 50%;
+      h3,
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+.CheckDiv {
+  position: absolute;
+  top: 0;
+  right: -55px;
+  width: 50px;
+  height: 100%;
+  background-color: var(--tertiary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s ease;
+  padding: 5px 0;
+
+  i {
+    color: white;
+    transition: 0.5s ease;
+  }
+}
+
+input {
+  display: none;
+
+  &:checked ~ .CheckDiv {
+    right: 0;
+
+    i {
+      transform: rotate(360deg);
     }
   }
 }

@@ -732,6 +732,7 @@ IIII
 
 .ListItem {
   display: flex;
+  padding: 10px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -755,17 +756,35 @@ IIII
 }
 .ListItem label {
   width: 100%;
-  height: 100%;
-  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   cursor: pointer;
   margin: 0;
 }
-.ListItem label .CheckDiv {
+.ListItem label:hover ~ .CheckDiv {
+  right: 0;
+}
+.ListItem label:hover ~ .CheckDiv i {
+  transform: rotate(360deg);
+}
+.ListItem label:hover ~ .DescriptionText {
+  max-width: 50%;
+}
+.ListItem label:hover ~ .DescriptionText h3,
+.ListItem label:hover ~ .DescriptionText p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.CheckDiv {
   position: absolute;
   top: 0;
   right: -55px;
@@ -779,32 +798,18 @@ IIII
   transition: all 0.5s ease;
   padding: 5px 0;
 }
-.ListItem label .CheckDiv i {
+.CheckDiv i {
   color: white;
   transition: 0.5s ease;
 }
-.ListItem label:hover .CheckDiv {
-  right: 0;
-}
-.ListItem label:hover .CheckDiv i {
-  transform: rotate(360deg);
-}
-.ListItem label:hover .DescriptionText {
-  max-width: 50%;
-}
-.ListItem label:hover .DescriptionText h3,
-.ListItem label:hover .DescriptionText p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.ListItem input {
+
+input {
   display: none;
 }
-.ListItem input:checked + label .CheckDiv {
+input:checked ~ .CheckDiv {
   right: 0;
 }
-.ListItem input:checked + label .CheckDiv i {
+input:checked ~ .CheckDiv i {
   transform: rotate(360deg);
 }
 
